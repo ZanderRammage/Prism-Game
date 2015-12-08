@@ -1,0 +1,7 @@
+ContentLibrary = 
+{
+	string Name = "Prism Game",
+	uint64 LibraryId = 5670ddc96e17bfee,
+	string SourceControlType = "",
+	bool ReadOnly = false,
+},
