@@ -1,0 +1,88 @@
+class ColorChanger : ZilchComponent
+{
+    var R : Integer = 255;
+    var G : Integer = 0;
+    var B : Integer = 0;
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        if(this.R == 255 && this.G == 0 && this.B == 0)     //Red to Yellow
+        {
+            while(true)
+            {
+                this.G += 1;
+                this.Owner.Sprite.Color = Real4(this.R, this.G, this.B, 1);
+                Console.WriteLine("`this.R`, `this.B`, `this.G`, 1");
+                Console.WriteLine(this.Owner.Sprite.Color);
+                if(this.G == 255)
+                {
+                    break;
+                }
+            }
+        }
+        if(this.R == 255 && this.G == 255 && this.B == 0)   //Yellow to Green
+        {
+            while(true)
+            {
+                this.R -= 1;
+                this.Owner.Sprite.Color = Real4(this.R, this.G, this.B, 1);
+                if(this.R == 0)
+                {
+                    break;
+                }
+            }
+        }
+        if(this.R == 0 && this.G == 255 && this.B == 0)     //Green to Cyan
+        {
+            while(true)
+            {
+                this.B += 1;
+                this.Owner.Sprite.Color = Real4(this.R, this.G, this.B, 1);
+                if(this.B == 255)
+                {
+                    break;
+                }
+            }
+        }
+        if(this.R == 0 && this.G == 255 && this.B == 255)  //Cyan to Blue
+        {
+            while(true)
+            {
+                this.G -= 1;
+                this.Owner.Sprite.Color = Real4(this.R, this.G, this.B, 1);
+                if(this.G == 0)
+                {
+                    break;
+                }
+            }
+        }
+        if(this.R == 0 && this.G == 0 && this.B == 255)     //Blue to Magenta
+        {
+            while(true)
+            {
+                this.R += 1;
+                this.Owner.Sprite.Color = Real4(this.R, this.G, this.B, 1);
+                if(this.R == 255)
+                {
+                    break;
+                }
+            }
+        }
+        if(this.R == 255 && this.G == 0 && this.B == 255)
+        {
+            while(true)
+            {
+                this.B -= 1;
+                this.Owner.Sprite.Color = Real4(this.R, this.G, this.B, 1);
+                if(this.B == 0)
+                {
+                    break;
+                }
+            }
+        }
+    }
+}
