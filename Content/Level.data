@@ -103,7 +103,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [2.83739233, 0.262234837, 50],
+			Vec3 Translation = [0.587495804, 0.185315326, 50],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [-0, -1.09278471e-008, 0, 1],
 		},
@@ -123,7 +123,7 @@ Level =
 			float LookDistance = 50,
 			float VerticalAngle = 0,
 			float HorizontalAngle = 0,
-			Vec3 LookTarget = [2.83739233, 0.262234837, 1.24026556e-007],
+			Vec3 LookTarget = [0.587495804, 0.185315326, 2.56804995e-008],
 			float MoveSensitivity = 1,
 		},
 		EditorRenderer = 
@@ -227,6 +227,9 @@ Level =
 			Vec3 Offset = [0, 0, 0],
 			Vec3 Size = [0.5, 0.5, 0.5],
 		},
+		ColorChanger = 
+		{
+		},
 	},
 	Cog = 
 	{
@@ -283,6 +286,9 @@ Level =
 			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
 			Vec3 Offset = [0, 0, 0],
 			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		ColorChanger = 
+		{
 		},
 	},
 	Cog = 
@@ -341,6 +347,9 @@ Level =
 			Vec3 Offset = [0, 0, 0],
 			Vec3 Size = [0.5, 0.5, 0.5],
 		},
+		ColorChanger = 
+		{
+		},
 	},
 	Cog = 
 	{
@@ -397,6 +406,9 @@ Level =
 			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
 			Vec3 Offset = [0, 0, 0],
 			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		ColorChanger = 
+		{
 		},
 	},
 	Cog = 
