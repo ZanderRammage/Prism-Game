@@ -103,7 +103,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0.587495804, 0.185315326, 50],
+			Vec3 Translation = [-1.65547359, 0.0768627673, 50],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [-0, -1.09278471e-008, 0, 1],
 		},
@@ -115,7 +115,7 @@ Level =
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 500,
-			float Size = 18.2683792,
+			float Size = 11.0803347,
 		},
 		EditorCameraController = 
 		{
@@ -123,7 +123,7 @@ Level =
 			float LookDistance = 50,
 			float VerticalAngle = 0,
 			float HorizontalAngle = 0,
-			Vec3 LookTarget = [0.587495804, 0.185315326, 2.56804995e-008],
+			Vec3 LookTarget = [-1.65547359, 0.0768627673, -7.23628233e-008],
 			float MoveSensitivity = 1,
 		},
 		EditorRenderer = 
@@ -183,7 +183,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-8.5, 0, 0],
+			Vec3 Translation = [-8.5, 0, 1],
 			Vec3 Scale = [1, 10, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -193,7 +193,7 @@ Level =
 			bool VisibilityCulling = true,
 			bool VisibilityEvents = true,
 			bool CastShadows = false,
-			Vec4 Color = [1, 1, 1, 0.5],
+			Vec4 Color = [1, 0, 0, 1],
 			BlendMode BlendMode = Alpha,
 			SpriteGeometryMode GeometryMode = ZPlane,
 			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
@@ -253,7 +253,7 @@ Level =
 			bool VisibilityCulling = true,
 			bool VisibilityEvents = true,
 			bool CastShadows = false,
-			Vec4 Color = [1, 1, 1, 0.5],
+			Vec4 Color = [1, 0, 0, 1],
 			BlendMode BlendMode = Alpha,
 			SpriteGeometryMode GeometryMode = ZPlane,
 			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
@@ -313,7 +313,7 @@ Level =
 			bool VisibilityCulling = true,
 			bool VisibilityEvents = true,
 			bool CastShadows = false,
-			Vec4 Color = [1, 1, 1, 0.5],
+			Vec4 Color = [1, 0, 0, 1],
 			BlendMode BlendMode = Alpha,
 			SpriteGeometryMode GeometryMode = ZPlane,
 			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
@@ -373,7 +373,7 @@ Level =
 			bool VisibilityCulling = true,
 			bool VisibilityEvents = true,
 			bool CastShadows = false,
-			Vec4 Color = [1, 1, 1, 0.5],
+			Vec4 Color = [1, 0, 0, 1],
 			BlendMode BlendMode = Alpha,
 			SpriteGeometryMode GeometryMode = ZPlane,
 			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
