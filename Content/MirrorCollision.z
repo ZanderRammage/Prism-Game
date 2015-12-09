@@ -1,0 +1,30 @@
+class MirrorCollision : ZilchComponent
+{
+    [Property]
+    var Velocity : Real3 = Real3(0.0, 1.0, 0.0);
+    var Sprayer : Real3 = Real3();
+    
+    function Initialize(init : CogInitializer)
+    {
+        this.Sprayer = this.Space.FindObjectByName("LightSprayer").Transform.Translation;
+        //Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+    }
+    
+    function OnCollisionStarted(event : CollisionEvent)
+    {
+        if (event.OtherObject.Name == "Mirror")
+        {
+            this.Owner.RigidBody.Velocity = this.Velocity;
+        }
+        
+        if (event.OtherObject.Name == "LightSprayer")
+        {
+            this.Owner.Destroy();
+        }
+    }
+}

@@ -1,0 +1,56 @@
+class SprayerCollison : ZilchComponent
+{
+    var Color : Real4 = Real4(1.0, 1.0, 0.0, 0.5);
+    var CollisionColor : Real4 = Real4(1.0, 1.0, 0.0, 1.0);
+    
+    var Timer : Real = 0.0;
+    
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        this.Timer += event.Dt;
+        if (this.Timer >= 0.5)
+        {
+            this.Owner.Sprite.Color = this.Color;
+        }
+    }
+    
+    function OnCollisionStarted(event : CollisionEvent)
+    {
+        if (event.OtherObject.ArchetypeName == "LightBallTest")
+        {
+            var temp = event.OtherObject.RigidBody.Velocity;
+            var newVelocity = Real3(0.0, 0.0, 0.0);
+            if(temp.X > 0)
+            {
+                newVelocity.Y = 5;
+            }else
+            {
+                newVelocity.X = 5;
+            }
+            var temp2 = event.OtherObject.RigidBody.Velocity;
+            var newVelocity2 = Real3(0.0, 0.0, 0.0);
+            
+            this.Timer = 0.0;
+            this.Owner.Sprite.Color = this.CollisionColor;
+            
+            var spawnPosition1 = this.Owner.Transform.Translation;
+            spawnPosition1.X += 0.5;
+            var archetypeToSpawn = Archetype.Find("LightBallTest");
+            var createdBullet = this.Space.CreateAtPosition(archetypeToSpawn, spawnPosition1);
+            createdBullet.RigidBody.Velocity = newVelocity;
+            
+            var spawnPosition2 = this.Owner.Transform.Translation;
+            spawnPosition2.X -= 0.5;
+            var archetypeToSpawn2 = Archetype.Find("LightBallTest");
+            var createdBullet2 = this.Space.CreateAtPosition(archetypeToSpawn2, spawnPosition2);
+            createdBullet2.RigidBody.Velocity = newVelocity2;
+            
+        }
+    }
+}

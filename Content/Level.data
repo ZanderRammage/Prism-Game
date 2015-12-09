@@ -12,7 +12,7 @@ Level =
 		},
 		GravityEffect = 
 		{
-			bool Active = true,
+			bool Active = false,
 			bool WakeUpOnChange = false,
 			bool LocalSpaceDirection = true,
 			float Strength = 10,
@@ -20,7 +20,7 @@ Level =
 		},
 		DragEffect = 
 		{
-			bool Active = true,
+			bool Active = false,
 			bool WakeUpOnChange = false,
 			float Drag = 0.699999988,
 		},
@@ -103,7 +103,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0.587495804, 0.185315326, 50],
+			Vec3 Translation = [-1.77887416, 0.0714439154, 50],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [-0, -1.09278471e-008, 0, 1],
 		},
@@ -115,7 +115,7 @@ Level =
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 500,
-			float Size = 18.2683792,
+			float Size = 10.9479036,
 		},
 		EditorCameraController = 
 		{
@@ -123,7 +123,7 @@ Level =
 			float LookDistance = 50,
 			float VerticalAngle = 0,
 			float HorizontalAngle = 0,
-			Vec3 LookTarget = [0.587495804, 0.185315326, 2.56804995e-008],
+			Vec3 LookTarget = [-1.77887416, 0.0714439154, -7.7756809e-008],
 			float MoveSensitivity = 1,
 		},
 		EditorRenderer = 
@@ -227,9 +227,6 @@ Level =
 			Vec3 Offset = [0, 0, 0],
 			Vec3 Size = [0.5, 0.5, 0.5],
 		},
-		ColorChanger = 
-		{
-		},
 	},
 	Cog = 
 	{
@@ -286,9 +283,6 @@ Level =
 			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
 			Vec3 Offset = [0, 0, 0],
 			Vec3 Size = [0.5, 0.5, 0.5],
-		},
-		ColorChanger = 
-		{
 		},
 	},
 	Cog = 
@@ -347,9 +341,6 @@ Level =
 			Vec3 Offset = [0, 0, 0],
 			Vec3 Size = [0.5, 0.5, 0.5],
 		},
-		ColorChanger = 
-		{
-		},
 	},
 	Cog = 
 	{
@@ -406,9 +397,6 @@ Level =
 			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
 			Vec3 Offset = [0, 0, 0],
 			Vec3 Size = [0.5, 0.5, 0.5],
-		},
-		ColorChanger = 
-		{
 		},
 	},
 	Cog = 
@@ -492,7 +480,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-7, 1, 0],
+			Vec3 Translation = [-5.25, -0.0700000003, 0],
 			Vec3 Scale = [1, 0.300000012, 1],
 			Quat Rotation = [0, 0, -0.382683456, 0.923879504],
 		},
@@ -514,6 +502,28 @@ Level =
 			float AnimationSpeed = 1,
 			uint StartFrame = 0,
 		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
 	},
 	Cog = 
 	{
@@ -527,7 +537,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0, -3, 0],
+			Vec3 Translation = [-1.75, -0.0700000003, 0],
 			Vec3 Scale = [1, 0.300000012, 1],
 			Quat Rotation = [0, 0, 0.382683456, 0.923879504],
 		},
@@ -548,6 +558,28 @@ Level =
 			bool AnimationActive = true,
 			float AnimationSpeed = 1,
 			uint StartFrame = 0,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
 		},
 	},
 	Cog = 
@@ -583,6 +615,31 @@ Level =
 			bool AnimationActive = true,
 			float AnimationSpeed = 1,
 			uint StartFrame = 0,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		SprayerCollison = 
+		{
 		},
 	},
 	Cog = 
@@ -722,6 +779,24 @@ Level =
 			TextAlign Align = Center,
 			float PixelsPerUnit = 64,
 			bool Smoothing = true,
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "567f7372d1f6ac74:LightBallTest",
+		LinkId = 
+		{
+			uint Id = 17,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-3.5, -4, 0],
+			Vec3 Scale = [0.200000003, 0.200000003, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "LightBallTest",
 		},
 	},
 },

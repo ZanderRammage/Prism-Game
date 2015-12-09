@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "MirrorCollision",
+		uint64 ResourceId = 567f7c956e905a3c,
+	},
+},
