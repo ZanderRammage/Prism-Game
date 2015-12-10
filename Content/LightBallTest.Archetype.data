@@ -62,4 +62,16 @@ Cog =
 	{
 		Vec3 Velocity = [0, 5, 0],
 	},
+	SoundEmitter = 
+	{
+		float Volume = 1,
+		float Pitch = 0,
+		bool Positional = true,
+		int Version = 1,
+	},
+	SimpleSound = 
+	{
+		bool StartPlaying = true,
+		string CueName = "567e055a00b5d802:Ray1",
+	},
 },

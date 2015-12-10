@@ -26,5 +26,10 @@ class MirrorCollision : ZilchComponent
         {
             this.Owner.Destroy();
         }
+        
+        if (event.OtherObject.Name == "LightCatcher")
+        {
+            this.Owner.Destroy();
+        }
     }
 }

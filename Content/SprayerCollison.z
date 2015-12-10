@@ -35,6 +35,13 @@ class SprayerCollison : ZilchComponent
             }
             var temp2 = event.OtherObject.RigidBody.Velocity;
             var newVelocity2 = Real3(0.0, 0.0, 0.0);
+            if(temp2.X < 0)
+            {
+                newVelocity2.X = -5;
+            }else
+            {
+                newVelocity2.Y = 5;
+            }
             
             this.Timer = 0.0;
             this.Owner.Sprite.Color = this.CollisionColor;
